@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation1"
+    android:label="navigation"
+    app:startDestination="@id/step1">
+
+    <fragment
+        android:id="@+id/step1"
+        android:name="com.tronindmitr.lab2.Step1"
+        android:label="Шаг 1"
+        tools:layout="@layout/fragment_step1" />
+    <fragment
+        android:id="@+id/step4"
+        android:name="com.tronindmitr.lab2.Step4"
+        android:label="Шаг 2"
+        tools:layout="@layout/fragment_step4" />
+    <fragment
+        android:id="@+id/step7"
+        android:name="com.tronindmitr.lab2.Step7"
+        android:label="Шаг 7"
+        tools:layout="@layout/fragment_step7" />
+    <fragment
+        android:id="@+id/step8"
+        android:name="com.tronindmitr.lab2.Step8"
+        android:label="Шаг 8"
+        tools:layout="@layout/fragment_step8" />
+    <fragment
+        android:id="@+id/step6"
+        android:name="com.tronindmitr.lab2.Step6"
+        android:label="fragment_step6"
+        tools:layout="@layout/fragment_step6" />
+</navigation>

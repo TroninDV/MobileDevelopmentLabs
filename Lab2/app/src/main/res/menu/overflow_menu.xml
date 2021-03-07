@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/step1"
+        android:title="Шаг 1" />
+    <item
+        android:id="@+id/step4"
+        android:title="Шаг 4" />
+    <item
+        android:id="@+id/step6"
+        android:title="Шаг 6" />
+    <item
+        android:id="@+id/step7"
+        android:title="Шаг 7" />
+    <item
+        android:id="@+id/step8"
+        android:title="Шаг 8" />
+</menu>
