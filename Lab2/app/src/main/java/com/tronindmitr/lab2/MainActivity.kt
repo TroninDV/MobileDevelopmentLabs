@@ -2,11 +2,15 @@ package com.tronindmitr.lab2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import android.view.MenuItem
+import androidx.appcompat.app.ActionBar
 import androidx.core.view.get
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.NavController
+import androidx.navigation.createGraph
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.*
@@ -27,10 +31,10 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment_) as NavHostFragment
         val navController = navHostFragment.navController
 
-        appBarConfiguration = AppBarConfiguration(navController.graph, drawerLayout)
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        val topLevelDestination = setOf(R.id.step1, R.id.step4, R.id.step6, R.id.step7, R.id.step8)
 
-        setupActionBarWithNavController(navController, drawerLayout)
+        appBarConfiguration = AppBarConfiguration(topLevelDestination, drawerLayout)
+        setupActionBarWithNavController(navController, appBarConfiguration)
         findViewById<NavigationView>(R.id.nav_view).setupWithNavController(navController)
     }
 
